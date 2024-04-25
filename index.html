@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <header>
+      <nav>
+        <div class="flex flex-col justify-between  mx-auto bg-slate-300 text-black items-center rounded-lg lg:flex-row w-3/5 h-2/3">
+          <div class="p-4 min-[60px] min-h-52: bg-slate-300 lg:h-full">
+            <a href="#"
+              ><h1 class="text-6xl text-center font-bold md:text-4xl lg:text-5xl">Interactive</h1>
+              <span class="text-2xl font-medium text-center lg:text-3xl ">Geometry Genius</span></a
+            >
+          </div>
+          <div>
+            <button class="rounded-lg bg-blue-600 text-white p-2 text-2xl lg:mr-3">
+              Blog
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <!-- new section  -->
+
+        <div class="flex flex-col lg:flex-row">
+          <div class="grid mx-auto  grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-8 ">
+           <div class="card bg-base-100 w-96 shadow-xl bg-white">
+             <div class="px-10 pt-10">
+               <img
+                 src="./images/triangle.png"
+                 alt="Shoes"
+                 class="rounded-xl"
+               />
+             </div>
+
+             <div class="card-body items-center text-center ">
+               <h2 class="card-title text-black">Triangle</h2>
+               <p class="text-black">Area (A) = 0.5 x b x h</p>
+               <p>
+                 <input id="triangle-base" class="w-[70px] bg-[#F1F1F1] p-1 rounded-lg" type="text" placeholder="b">
+                 <span>cm</span>
+                 <input id="triangle-hight" class="w-[70px] bg-[#F1F1F1] p-1 rounded-lg" type="text" placeholder="h">
+                 <span>cm</span>
+               </p>
+               <p class="mt-8 font-medium text-3xl text-black">Aria : <span id="triangle-area"></span></p>
+               <div class="card-actions">
+                 <button onclick="calculatorAria()" class="btn btn-primary w-[160px] mt-8 text-white">Calculate</button>
+               </div>
+             </div>
+           </div>
+ 
+           <!-- new card  -->
+ 
+           <div class="card bg-base-100 w-96 shadow-xl bg-white">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/triangle.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center ">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <p>
+                <input class="w-[70px] bg-[#F1F1F1] p-1 rounded-lg" type="text" placeholder="b">
+                <span>cm</span>
+                <input class="w-[70px] bg-[#F1F1F1] p-1 rounded-lg border" type="text" placeholder="h">
+                <span>cm</span>
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary w-[160px] mt-8 text-white">Calculate</button>
+              </div>
+            </div>
+          </div>
+           <!-- new card  -->
+ 
+           <div class="card bg-base-100 w-96 shadow-2xl bg-white ">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/triangle.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center ">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <p>
+                <input class="w-[70px] bg-[#F1F1F1] p-1 rounded-lg" type="text" placeholder="b">
+                <span>cm</span>
+                <input class="w-[70px] bg-[#F1F1F1] p-1 rounded-lg" type="text" placeholder="h">
+                <span>cm</span>
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-primary w-[160px] mt-8 text-white">Calculate</button>
+              </div>
+            </div>
+          </div>   
+          </div>
+         </div>
+    </main>
+    <footer></footer>
+    <script src="./js/javascript.js"></script>
+  </body>
+</html>
